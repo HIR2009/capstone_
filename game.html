@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape-Generator</title>
+  <link rel="stylesheet" href="game.css">
+  <script src="game.js" type="module"></script>
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="./index.html">Home</a>
+        <a href="./harmful.html">Harmful Effect</a>
+        <a href="./tips.html">Tips</a>
+        <a href="#">Penal Provisions</a>
+        <a href="./game.html">Game Time!</a>
+        <a href="https://www.lung.org/donate">Donate</a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+  
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+
+  <div id="input">
+    <h1>Shape Generator</h1>
+    <br><br>
+    <h2>Instructions</h2>
+    <p>Select a shape & enter no of shapes.
+        
+        Multiples of 5 , should be Rectangle
+    
+        and Multiples of 10, should be Square.
+    </p>
+    <br>
+    <div>
+      <input type="radio" name="choice" value="circle" id="circle" checked> Circle
+      <input type="radio" name="choice" value="square" id="square"> Square
+      <input type="radio" name="choice" value="rectangle" id="rectangle"> Rectangle
+    </div>
+    <br>
+    <div>
+      <input type="number" id="number" name="shape">
+      <button id="button">Generate</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box" id="box"></div>
+  </div>
+</body>
+
+</html>
